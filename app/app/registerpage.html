@@ -1,0 +1,7 @@
+<h1>form</h1>
+<form [ngFormModel]="userForm" (submit)="saveUser($event)">
+    <input ngControl="email" id="email" type="email" #email="ngForm" placeholder="Your email">
+    
+    <input ngControl="name" id="name" type="name" #name="ngForm" placeholder="Your Name">
+  <button type="submit">Register</button>
+</form>
